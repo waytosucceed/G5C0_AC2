@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>G5C0 Conventions</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="wts.css">
+  <link rel="icon" type="image/x-icon" href="Logo_last.png">
+</head>
+<body>
+  <audio id="cheers" >
+    <source src="cheers.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="points" src="Points.mp3"></audio>
+  <audio id="fail" src="fail.mp3"></audio>
+  <div class="header" style="width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0); padding-bottom:10px;">
+    <img src="Logo.png" width="5%" style="float:left; margin-top:25px;" class="img-responsive">
+    <span> <img src="header.png" width="30%" height="100px" class="img-responsive"></span>
+</div>
+<br>
+<br>
+  <center>
+  <h1 id="heading">Convention</h1>
+
+  <div class="container">
+
+  <button onclick="abc(1)"  class="smallbtn">Q1</button>
+  <button onclick="abc(2)" class="smallbtn">Q2</button>
+  <button onclick="abc(3)"  class="smallbtn">Q3</button>
+  <button onclick="abc(4)"  class="smallbtn">Q4</button>
+  <button onclick="abc(5)" class="smallbtn">Q5</button>
+  <button onclick="abc(6)" class="smallbtn">Q6</button>
+  <button onclick="abc(7)" class="smallbtn">Q7</button>
+  <button onclick="abc(8)" class="smallbtn">Q8</button>
+  <button onclick="abc(9)" class="smallbtn">Q9</button> 
+  <button onclick="abc(10)" class="smallbtn">Q10</button>
+  <button onclick="abc(11)" class="smallbtn">Q11</button>
+  <button onclick="abc(12)" class="smallbtn">Q12</button>
+  <button onclick="abc(13)" class="smallbtn">Q13</button>
+  <button onclick="abc(14)" class="smallbtn">Q14</button>
+  <button onclick="abc(15)" class="smallbtn">Q15</button>
+  <button onclick="abc(16)" class="smallbtn">Q16</button>
+  <button onclick="abc(17)" class="smallbtn">Q17</button>
+  <button onclick="abc(18)" class="smallbtn">Q18</button>
+  <button onclick="abc(19)" class="smallbtn">Q19</button> 
+  <button onclick="abc(20)" class="smallbtn">Q20</button>
+  <button onclick="abc(21)" class="smallbtn">Q21</button>
+  <button onclick="abc(22)" class="smallbtn">Q22</button>
+  <button onclick="abc(23)" class="smallbtn">Q23</button>
+  <button onclick="abc(24)" class="smallbtn">Q24</button>
+  <button onclick="abc(25)" class="smallbtn">Q25</button>
+  <button onclick="abc(26)" class="smallbtn">Q26</button>
+  <button onclick="abc(27)" class="smallbtn">Q27</button>
+  <button onclick="abc(28)" class="smallbtn">Q28</button>
+  <button onclick="abc(29)" class="smallbtn">Q29</button> 
+  <button onclick="abc(30)" class="smallbtn">Q30</button>
+
+
+
+</div>
+
+  <div class="maindiv container">
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="font-size:25px; color:black; font-family:Georgia;">
+      <p id="numdiv"></p>
+      </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 imgdiv">
+      <img id ="math_ques" src="MAth Question.jpg" width="100%">
+    </div>
+  <div id="questiondiv" class="col-lg-7 col-md-7 col-sm-7 col-xs-8">
+    <div id="question"></div>
+    <br><br>
+  <div class="menu"><br><ul id="options"></ul></div>
+  <button id="subbtn" class="btn btn-success" onclick="checkAnswer()">Submit Answer</button>
+  <button id="nextbtn" class="btn btn-primary" onclick="newques()" style="display:none">Next</button>
+  <p id="result"></p>
+  </div>
+</div>
+  <script>
+    // Define an array of questions and their options
+    var questions = [
+    
+    {
+      questionNo: "Q1",
+      question: " What type of sentence is 'Please pass the salt.'?",
+      options: ["Declarative", "Interrogative", "Imperative", "Exclamatory"],
+      answer: "Imperative"
+    },
+
+    {
+      questionNo: "Q2.",
+      question: " In the sentence 'The dog chased the cat around the yard.'', what is the complete predicate?",
+      options: ["chased the cat around the yard", "The dog chased", "the cat around the yard", "The dog"],
+      answer: "chased the cat around the yard"
+    },
+
+    {
+      questionNo: "Q3.",
+      question: " What is the simple subject in the sentence 'The birds sang sweetly.'?",
+      options: ["birds", "sang", "sweetly", "The birds sang sweetly"],
+      answer: "birds"
+    },
+
+    
+    {
+      questionNo: "Q4.",
+      question: " After finishing his homework.'Is this a complete sentence or a fragment?",
+      options: ["Complete sentence", "Fragment"],
+      answer: "Fragment"
+    },
+
+    {
+      questionNo: "Q5.",
+      question: " 'I like to read I often visit the library.' Is this a complete sentence or a run- on?",
+      options: ["Complete sentence", "Run-on"],
+      answer: "Run-on"
+    },
+
+
+
+    {
+      questionNo: "Q6.",
+      question: " 'Although tired from practice.' Is this a complete sentence, a fragment, or a run-on?",
+      options: ["Complete sentence", "Fragment","Run-on"],
+      answer: "Fragment"
+    },
+
+   
+
+      {
+        questionNo: "Q7.",
+        question: " In the sentence 'Although it was raining, they decided to go for a walk.', which part is the independent clause?",
+        options: ["Although it was raining", "they decided to go for a walk", "to go for a walk"," Although it was raining, they decided to go for a walk."],
+        answer: "they decided to go for a walk"
+      },
+
+      {
+        questionNo: "Q8.",
+        question: " 'She loves to dance, and she excels at it.' Is this sentence simple or compound?",
+        options: ["Simple", "Compound"],
+        answer: "Compound"
+      },
+
+      {
+        questionNo: "Q9.",
+        question: " 'After the storm passed, the sky cleared, and the birds began to sing.' Is this sentence simple, compound, or complex?",
+        options: ["Simple", "Compound","Complex"],
+        answer: "Complex"    
+      },
+
+      {
+        questionNo: "Q10.",
+        question: " Order the words to form a correct sentence: 'always, she, homework, diligently, does.'",
+        options: ["She diligently does homework always.", "She always does homework diligently.", "Does she always homework diligently.",  "Always does homework she diligently."],
+        answer: "She always does homework diligently."
+      },
+
+      {
+        questionNo: "Q11.",
+        question: " In the sentence 'Despite feeling exhausted, Sarah continued to work on her project until late at night.', which part is the dependent clause?",
+        options: ["Despite feeling exhausted", "Sarah continued", "to work on her project","until late at night" ],
+        answer: "Despite feeling exhausted"
+      },
+
+      {
+        questionNo: "Q12.",
+        question: " 'Although the movie was long, we stayed until the end, and we enjoyed every moment of it.' Is this sentence simple, compound, or complex?",
+        options: ["Simple", "Compound", "Complex"],
+        answer: "Compound"
+      },
+      {
+        questionNo: "Q13.",
+        question: " Order the words to form a correct sentence: 'fascinating, was, history, the, lecture.'",
+        options: ["The lecture history fascinating was.","History was the fascinating lecture.","The fascinating history was lecture.",  "The history lecture was fascinating."],
+        answer: "The history lecture was fascinating."
+      },
+
+      {
+        questionNo: "Q14.",
+        question: " Which of the following is an abstract noun?",
+        options: ["Joyful", "Happiness", "Joyous", "Merry"],
+        answer: "Happiness"
+      },
+
+      {
+        questionNo: "Q15.",
+        question: " Which option shows the correct plural form of the noun 'buffalo'?",
+        options: ["Buffalos", "Buffaloes", "Buffali", "Buffalooes"],
+        answer: "Buffaloes"
+      },
+
+      {
+        questionNo: "Q16.",
+        question: " In the sentence, 'The cats' toys were scattered across the floor,' what does the apostrophe indicate?",
+        options: ["Plural form", "Singular possessive", "Plural possessive", "Contraction"],
+        answer: "Plural possessive"
+      },
+
+      {
+        questionNo: "Q17.",
+        question: " Which option correctly shows the possessive form of the noun 'child' in the plural form?",
+        options: ["Children's", "Childs'", "Childrens'", "Childs's"],
+        answer: "Children's"
+      },
+
+      {
+        questionNo: "Q18.",
+        question: " Which sentence contains a correct usage of plural and possessive nouns?",
+        options: ["The dog's chased their tails.", "The dogs' chased its tails.", "The dogs chased their's tails.", "The dogs chased their tails."],
+        answer: "The dogs chased their tails."
+      },
+
+      {
+        questionNo: "Q19.",
+        question: " In the sentence, 'She enjoys reading mystery novels,' what is the personal pronoun?",
+        options: ["Enjoys", "She", "Mystery", "Reading"],
+        answer: "She"
+      },
+
+      {
+        questionNo: "Q20.",
+        question: " Which personal pronoun should fill the blank in the sentence 'Jenny invited ___ to her party'?",
+        options: ["I", "Me", "Myself","My"],
+        answer: "Me"
+      },
+
+      { questionNo: "Q21.",
+        question: " Which personal pronoun can replace the noun phrase 'the students' in the sentence 'The teacher praised the students for their hard work'?",
+        options: ["Them", "They", "Theirs","Themself"],
+        answer: "Them"
+      },
+
+      {
+        questionNo: "Q22.",
+        question: " In the sentence 'Sarah and ___ went to the store,'' which pronoun should replace the blank?",
+        options: ["Me", "Myself", "I", "Mine"],
+        answer: "I"
+      },
+
+      {
+        questionNo: "Q23.",
+        question: " Which option correctly combines the compound objects in the sentence 'The teacher gave the award to Sarah and ___'?",
+        options: ["I", "Me", "Myself", "Mine"],
+        answer: "Me"
+      },
+
+      {
+        questionNo: "Q24.",
+        question: " Which possessive pronoun should fill the blank in the sentence 'This book is ___'?",
+        options: ["My", "Mine", "Me", "Myself"],
+        answer: "Mine"
+      },
+
+      {
+        questionNo: "Q25.",
+        question: " Which pronoun correctly fills the blank in the sentence 'I prepared dinner for ___'?",
+        options: ["Myself", "Me", "I", "My"],
+        answer: "Myself"
+      },
+
+      {
+        questionNo: "Q26.",
+        question: " Which reflexive pronoun correctly completes the sentence 'She cut ___ while cooking'?",
+        options: ["Hers", "Herself", "Her","She"],
+        answer: "Herself"
+      },
+
+      {
+        questionNo: "Q27.",
+        question: " In the sentence 'The car, which was blue, belonged to John,'' which word is the relative pronoun?",
+        options: ["Car", "Blue", "Which","John"],
+        answer: "Which"
+      },
+
+      {
+        questionNo: "Q28.",
+        question: " Which option correctly uses a relative pronoun in the sentence 'The student ___ you recommended for the scholarship received it'?",
+        options: ["Who", "Whom", "That","Which"],
+        answer: "Who"
+      },
+
+      {
+        questionNo: "Q29.",
+        question: " Which relative pronoun correctly introduces the clause in the sentence 'The house ___ my grandparents lived in is now a museum'? ",
+        options: ["Who", "Whose", "That", "Which"],
+        answer: "That"
+      },
+
+      {
+        questionNo: "Q30.",
+        question: " In the sentence 'The person who discovered the treasure was awarded a medal, what function does 'who' serve'? ",
+        options: ["Subject personal pronoun", "Object personal pronoun", "Possessive pronoun", "Relative pronoun"],
+        answer: "Relative pronoun"
+      },
+
+
+
+
+    
+
+      
+
+
+   
+
+   
+
+
+      
+      // Add more questions here
+    ];
+
+    //define the array of images
+
+    var img= ["Assets/1.jpg", "Assets/2.jpg", "Assets/3.jpg", "Assets/4.jpg", "Assets/5.jpg", "Assets/6.jpg", "Assets/7.jpg", "Assets/8.jpg", "Assets/9.jpg", "Assets/10.jpg", "Assets/11.jpg", "Assets/12.jpg", "Assets/13.jpg", "Assets/14.jpg", "Assets/15.jpg", "Assets/16.jpg", "Assets/17.jpg", "Assets/18.jpg", "Assets/19.gif", "Assets/20.jpg", "Assets/21.jpg", "Assets/22.jpg", "Assets/23.jpg", "Assets/24.jpg", "Assets/25.jpg", "Assets/26.jpg", "Assets/27.jpg", "Assets/28.jpg","Assets/29.jpg", "Assets/30.jpg"]
+    
+    // Get a random question from the array
+
+    var randomQuestion = questions[0];
+    var updatedimage = img[0]
+    document.getElementById("math_ques").src = updatedimage
+    document.getElementById("numdiv").innerHTML = randomQuestion.questionNo;
+    document.getElementById("question").innerHTML = randomQuestion.question;
+    
+    randomQuestion.options.forEach(function(option) {
+      var li = document.createElement("li");
+      li.innerHTML = '<input type="radio" name="answer" value="' + option + '"> ' + option;
+      document.getElementById("options").appendChild(li);
+    });
+
+
+// Create a function here like family array project of Byjus to display next question \
+    // from array everytime instead of random question
+    
+    score=0
+    var i=1;
+    var count=questions.length
+    function newques(){
+      if(i==count){
+        document.getElementById("heading").innerHTML = "Thank You...."
+        document.getElementById("math_ques").src = "last.jpg"
+        document.getElementById("question").innerHTML="Score:"+score;
+        document.getElementById("cheers").play()
+        // document.getElementById("result").innerHTML ="Click on the next button on the top right corner to practice more"
+        document.getElementById("nextbtn").style.display="none";
+
+              
+      if(score<=10){
+
+      document.getElementById("options").innerHTML="<div class='progress'> <div class='progress-bar' role='progressbar' aria-valuenow='30' aria-valuemin='0' aria-valuemax='100' value='30' style='width:30%;background-color:red;'>  </div></div>"
+      document.getElementById("result").innerHTML="I Appreciate Your Attempt 😀"
+
+      }
+
+      if(score>10 && score<=20){
+
+      document.getElementById("options").innerHTML="<div class='progress'> <div class='progress-bar' role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width:60%;background-color:blue;'>  <span class='sr-only'>70% Complete</span></div></div>"
+      document.getElementById("result").innerHTML="Well Done You're Smart 👍"
+
+
+}
+
+      if(score>20){
+
+    document.getElementById("options").innerHTML="<div class='progress'> <div class='progress-bar' role='progressbar' aria-valuenow='90' aria-valuemin='0' aria-valuemax='100' style='width:100%;background-color:green;'>  <span class='sr-only'>70% Complete</span></div></div>"
+    document.getElementById("result").innerHTML="Im Impressed <br> You're Super Smart 😎"
+
+
+}
+
+      }
+      else{
+      document.getElementById("options").innerHTML=""
+      document.getElementById("result").innerHTML =""
+      
+  
+      updatedimage= img[i]
+      document.getElementById("math_ques").src = updatedimage
+
+// Display the question and options on the page
+      randomQuestion = questions[i];    
+      document.getElementById("numdiv").innerHTML = randomQuestion.questionNo;
+    document.getElementById("question").innerHTML = randomQuestion.question;
+    
+    
+    randomQuestion.options.forEach(function(option) {
+      var li = document.createElement("li");
+      li.innerHTML = '<input type="radio" name="answer" value="' + option + '"> ' + option;
+      document.getElementById("options").appendChild(li);
+    });
+    document.getElementById("subbtn").style.display="inline-block"
+        document.getElementById("nextbtn").style.display="none"
+
+    i++;
+    }
+  }
+ 
+  
+    
+    // Check the selected answer against the correct answer
+    function checkAnswer() {
+      var selectedAnswer = document.querySelector('input[name="answer"]:checked').value;
+      if (selectedAnswer === randomQuestion.answer) {
+        score++;
+       
+      } 
+      document.getElementById("result").innerHTML = "Good Job! &#128512" ;
+        document.getElementById("points").play();
+        document.getElementById("subbtn").style.display="none"
+        document.getElementById("nextbtn").style.display="inline-block"
+    }
+
+   
+    function abc(x){
+      i=x-1
+      document.getElementById("options").innerHTML=""
+      document.getElementById("result").innerHTML =""
+      
+  
+      updatedimage= img[i]
+      document.getElementById("math_ques").src = updatedimage
+
+// Display the question and options on the page
+      randomQuestion = questions[i];    
+      document.getElementById("numdiv").innerHTML = randomQuestion.questionNo;
+    document.getElementById("question").innerHTML = randomQuestion.question;
+    
+    
+    randomQuestion.options.forEach(function(option) {
+      var li = document.createElement("li");
+      li.innerHTML = '<input type="radio" name="answer" value="' + option + '"> ' + option;
+      document.getElementById("options").appendChild(li);
+    });
+    document.getElementById("subbtn").style.display="inline-block"
+        document.getElementById("nextbtn").style.display="none"
+
+    i++;
+    }
+
+    
+  </script>
+</center>
+</body>
+</html>
